@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brend\\Documents\\Projetos\\.net\\Shop\\Shop.csproj": {}
+    "C:\\Users\\brend\\Documents\\Projetos\\.net\\api-dotnet-crud\\Shop\\Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brend\\Documents\\Projetos\\.net\\Shop\\Shop.csproj": {
+    "C:\\Users\\brend\\Documents\\Projetos\\.net\\api-dotnet-crud\\Shop\\Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brend\\Documents\\Projetos\\.net\\Shop\\Shop.csproj",
+        "projectUniqueName": "C:\\Users\\brend\\Documents\\Projetos\\.net\\api-dotnet-crud\\Shop\\Shop.csproj",
         "projectName": "Shop",
-        "projectPath": "C:\\Users\\brend\\Documents\\Projetos\\.net\\Shop\\Shop.csproj",
+        "projectPath": "C:\\Users\\brend\\Documents\\Projetos\\.net\\api-dotnet-crud\\Shop\\Shop.csproj",
         "packagesPath": "C:\\Users\\brend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brend\\Documents\\Projetos\\.net\\Shop\\obj\\",
+        "outputPath": "C:\\Users\\brend\\Documents\\Projetos\\.net\\api-dotnet-crud\\Shop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brend\\AppData\\Roaming\\NuGet\\NuGet.Config",
