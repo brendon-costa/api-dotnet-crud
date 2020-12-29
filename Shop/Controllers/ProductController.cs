@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -68,5 +69,57 @@ namespace Shop.Controllers
                 return BadRequest(new {message = "Não foi possível criar um produto"});
             }
         }
+
+        [HttpPut]
+        [Route("{id:int}")]
+        public async Task<ActionResult<Product>>  Put(
+            int id, 
+            [FromBody]Product produtc, 
+            [FromServices]DataContext context
+        )
+        {
+            if(produtc.Id != id)
+                return NotFound(new {message = "Produto não encontrada"});
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            
+            try {
+                context.Entry<Product>(produtc).State = EntityState.Modified;
+                await context.SaveChangesAsync();
+                return Ok(produtc);
+            }
+            catch(DbUpdateConcurrencyException)
+            {
+                return BadRequest(new {message = "Este regritos já foi atualizado"});
+            }
+            catch(Exception)
+            {
+                return BadRequest(new {message = "Não foi possível atualizar a categoria"});
+            }
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public async Task<ActionResult<Product>> Delete(
+            int id,
+            [FromServices]DataContext context
+        )
+        {
+            var produtc = await context.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if(produtc == null)
+                return NotFound(new {message = "Produto não encontrada"});
+            try
+            {
+                context.Products.Remove(produtc);
+                await context.SaveChangesAsync();
+                return Ok(new {message = "Produto removida com sucesso"});
+            }
+            catch (Exception) {
+                return BadRequest(new {message = "Não foi possível remover o produto"});
+            }
+        }
+
+
     }
 }
