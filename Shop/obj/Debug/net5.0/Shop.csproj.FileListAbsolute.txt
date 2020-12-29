@@ -35,3 +35,7 @@ C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\obj\Debug\net5.0\Sho
 C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\obj\Debug\net5.0\ref\Shop.dll
 C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\obj\Debug\net5.0\Shop.pdb
 C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\obj\Debug\net5.0\Shop.genruntimeconfig.cache
+C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\brend\Documents\Projetos\.net\api-dotnet-crud\Shop\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
